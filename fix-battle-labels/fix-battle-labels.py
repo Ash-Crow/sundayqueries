@@ -23,4 +23,5 @@ for result in results["results"]["bindings"]:
 
     label = label[:1].lower() + label[1:]
 
-    print(qid, label)
+    out = "{}\tLfr\t{}".format(qid, label)
+    print(out)
