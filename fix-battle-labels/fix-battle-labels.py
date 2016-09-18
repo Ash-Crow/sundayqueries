@@ -18,7 +18,7 @@ sparql.setReturnFormat(JSON)
 results = sparql.query().convert()
 
 for result in results["results"]["bindings"]:
-    qid = result['item']['value'].rsplit('/', 1)[-1]
+    qid = result['item']['value'].split('/')[-1]
     label = result['label']['value']
 
     print(qid, label)
