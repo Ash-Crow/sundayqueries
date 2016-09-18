@@ -21,4 +21,6 @@ for result in results["results"]["bindings"]:
     qid = result['item']['value'].split('/')[-1]
     label = result['label']['value']
 
+    label = label[:1].lower() + label[1:]
+
     print(qid, label)
