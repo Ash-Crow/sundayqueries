@@ -11,7 +11,7 @@ SELECT ?item ?label WHERE {{
   ?item rdfs:label ?label . FILTER(LANG(?label) = "fr") .
   FILTER(STRSTARTS(?label, "Siège ")) .
 }}
-""")  # Link to query: http://tinyurl.com/hju3gpt
+""")  # Link to query: http://tinyurl.com/z8bd26h
 
 sparql.setReturnFormat(JSON)
 
